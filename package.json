@@ -1,0 +1,35 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal website of Robert Dimitrov (node only needed for gulp)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertdimitrov/personal-website.git"
+  },
+  "author": "Robert Dimitrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertdimitrov/personal-website/issues"
+  },
+  "homepage": "https://github.com/robertdimitrov/personal-website#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-exit": "0.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.0"
+  }
+}
