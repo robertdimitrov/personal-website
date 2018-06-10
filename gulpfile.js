@@ -21,10 +21,10 @@ var scssWatchFiles = sassDirectory + '/**/*.scss';
 var jsDirectory = './js';
 var jsEntryFile = jsDirectory + '/app.js';
 var jsBundleFileName = 'bundle.min.js';
-var jsWatchFiles = jsDirectory + '/**/*.js';
+var jsWatchFiles = jsDirectory + '/*.js';
 
 function buildJS(watch) {
-  var bundler = watchify(browserify(jsEntryFile).transform(babelify));
+  var bundler = watchify(browserify(jsEntryFile).transform(babelify, { "presets" : ['es2015']}));
 
   function bundle() {
     var startMs = Date.now();
@@ -36,6 +36,7 @@ function buildJS(watch) {
       .pipe(source(jsBundleFileName))
       .pipe(buffer())
       .pipe(streamify(uglify()))
+      .on('error', function(err) { console.log(err); })
       .pipe(gulp.dest(distDirectory));
     console.log('Updated bundle file in', (Date.now() - startMs) + 'ms');
     return db;

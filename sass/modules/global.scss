@@ -1,8 +1,24 @@
-body {
-	background-color: $body-bg;
-	padding: 0;
+* {
+	box-sizing: border-box;
 }
 
-h1 {
+body {
+	background-color: $body-bg;
+	font-size: 18px;
+}
+
+::selection {
+	background-color: $light-grey;
 	color: $text-color;
+}
+
+a, a:hover, a:focus, a:visited {
+	text-decoration: none;
+	color: $highlight-color;
+	font-weight: 700;
+}
+
+a:hover {
+	color: darken($highlight-color,4%);
+	border-bottom: 2px solid $highlight-color;
 }

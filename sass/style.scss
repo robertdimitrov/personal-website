@@ -1,4 +1,11 @@
 @import 'variables/variables';
 
-// modules
+@import 'base/normalize';
+@import 'base/typography';
+
 @import 'modules/global';
+@import 'modules/layout';
+@import 'modules/about';
+@import 'modules/experience';
+@import 'modules/skills';
+@import 'modules/portfolio';

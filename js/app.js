@@ -1,2 +1,2 @@
-console.log(test)
-console.log(4)
+require('./scroll')
+// require('./toggle_skills')

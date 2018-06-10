@@ -1,0 +1,24 @@
+#skills {
+
+	.skills-item {
+		h2 {
+			margin: 8px 0;
+			padding: 0;
+			font-size: 1.17rem;
+			cursor: pointer;
+			display: inline-block;
+		}
+
+		p {
+			margin: 0;
+			margin-bottom: 24px;
+			padding: 0;
+			// display: none;
+		}
+
+		// p.active {
+		// 	display: block;
+		// 	margin-bottom: 24px;
+		// }
+	}
+}
